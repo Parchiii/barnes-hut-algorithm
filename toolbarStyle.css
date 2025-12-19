@@ -1,0 +1,29 @@
+/* Modern ToolBar Styling */
+.tool-bar {
+    /* Background and Colors */
+    -fx-background-color: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    -fx-text-fill: #212529;
+    
+    /* Borders and Separation */
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 0 0 1 0; /* A 1-pixel border only on the bottom */
+    
+    /* Effects for Depth */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+    
+    /* Spacing and Size */
+    -fx-padding: 8 12 8 12; /* Ample internal padding */
+}
+
+/* Style for buttons inside the ToolBar for a cohesive look */
+.tool-bar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #495057;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+/* Hover effect for buttons */
+.tool-bar .button:hover {
+    -fx-background-color: #dee2e6;
+}
