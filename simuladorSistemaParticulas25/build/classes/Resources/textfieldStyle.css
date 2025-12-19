@@ -1,0 +1,48 @@
+.text-field-transparente {
+    /* Fondo transparente */
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    /* Color del texto */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* Versión con borde sutil al estar enfocado */
+.text-field-transparente-borde {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-width: 0 0 1 0; /* Solo línea inferior */
+    -fx-border-radius: 0;
+    
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: rgba(255,255,255,0.6); /* Color del texto de sugerencia */
+}
+
+/* Para el texto de sugerencia (placeholder) */
+.text-field-transparente .text-input {
+    -fx-text-fill: white;
+}
+/* Texto blanco (ideal para fondos oscuros) */
+.text-field-blanco {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Texto negro (ideal para fondos claros) */
+.text-field-negro {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+/* Texto con color personalizado */
+.text-field-azul {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2196F3; /* Azul moderno */
+}
+
+.text-field-verde {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4CAF50; /* Verde */
+}

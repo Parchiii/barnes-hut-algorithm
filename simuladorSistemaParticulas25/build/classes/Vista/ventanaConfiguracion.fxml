@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VentanaConfiguracionControlador">
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane>
+               <children>
+                  <Text layoutX="133.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masa" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="inputCarga" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="inputMass" GridPane.columnIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Text layoutX="131.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carga" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="38.6064453125" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="botonGuardar" alignment="CENTER" layoutX="204.0" layoutY="-1.0" mnemonicParsing="false" onAction="#aceptarConfiguracion" styleClass="button-30-simple" stylesheets="@../resources/buttonStyle.css" text="Guardar Configuraciones" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
